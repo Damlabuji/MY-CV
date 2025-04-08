@@ -16,7 +16,7 @@ if (isset($_COOKIE['theme'])) {
 <body class="<?php echo $theme; ?>-theme">
   <div class="container">
     <form action="theme.php" method="post" style="float: right;">
-      <button type="submit" name="toggle_theme">🌗 Tema Değiştir</button>
+      <button type="submit" name="toggle_theme">🌗 Koyu mod </button>
     </form>
     <div class="card">
       <div class="left">
