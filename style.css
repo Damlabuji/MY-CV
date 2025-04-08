@@ -1,0 +1,93 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.4s, color 0.4s;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#theme-toggle {
+  float: right;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.left {
+  flex: 1;
+  min-width: 250px;
+  background-color: var(--left-bg);
+  color: var(--left-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0d6efd;
+  margin-bottom: 15px;
+}
+
+.left a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.right {
+  flex: 2;
+  padding: 20px;
+  background-color: var(--right-bg);
+  color: var(--text-color);
+}
+
+h2 {
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 5px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.light-theme {
+  --card-bg: #f5f5f5;
+  --left-bg: #ffffff;
+  --left-color: #000000;
+  --right-bg: #ffffff;
+  --text-color: #000000;
+  --link-color: #0d6efd;
+  background-color: #eaeaea;
+  color: #000;
+}
+
+.dark-theme {
+  --card-bg: #1e1e1e;
+  --left-bg: #2a2a2a;
+  --left-color: #ffffff;
+  --right-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --link-color: #90caf9;
+  background-color: #121212;
+  color: #fff;
+}
