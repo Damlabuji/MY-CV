@@ -1,8 +1,8 @@
 <?php
-// Tema varsayılan olarak açık renk
+
 $current_theme = "light";
 
-// Cookie kontrolüyle tema tercihini al
+
 if (isset($_COOKIE['theme'])) {
     if ($_COOKIE['theme'] === "dark") {
         $current_theme = "dark";
