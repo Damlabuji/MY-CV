@@ -1,93 +1,101 @@
 body {
   font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  transition: background 0.4s, color 0.4s;
+  color: #111;
+  transition: 0.3s ease all;
 }
 
 .container {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 25px;
 }
 
-#theme-toggle {
-  float: right;
-  margin-bottom: 15px;
-  padding: 8px 12px;
-  border: none;
-  background-color: #0d6efd;
+button {
+  padding: 6px 12px;
+  background-color: #007bff;
   color: white;
-  border-radius: 8px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--card-bg);
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .left {
   flex: 1;
-  min-width: 250px;
-  background-color: var(--left-bg);
-  color: var(--left-color);
+  min-width: 260px;
+  background-color: #fafafa;
   padding: 20px;
   text-align: center;
+  border-right: 1px solid #ddd;
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  border: 3px solid #0d6efd;
+  border-radius: 50%;
+  border: 2px solid #007bff;
   margin-bottom: 15px;
 }
 
 .left a {
-  color: var(--link-color);
+  color: #007bff;
   text-decoration: none;
 }
 
 .right {
   flex: 2;
   padding: 20px;
-  background-color: var(--right-bg);
-  color: var(--text-color);
+  background-color: #ffffff;
 }
 
 h2 {
-  border-bottom: 2px solid #0d6efd;
-  padding-bottom: 5px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 ul {
   padding-left: 20px;
+  margin-top: 5px;
 }
 
 .light-theme {
-  --card-bg: #f5f5f5;
-  --left-bg: #ffffff;
-  --left-color: #000000;
-  --right-bg: #ffffff;
-  --text-color: #000000;
-  --link-color: #0d6efd;
-  background-color: #eaeaea;
+  background-color: #f0f0f0;
   color: #000;
 }
 
 .dark-theme {
-  --card-bg: #1e1e1e;
-  --left-bg: #2a2a2a;
-  --left-color: #ffffff;
-  --right-bg: #1e1e1e;
-  --text-color: #ffffff;
-  --link-color: #90caf9;
   background-color: #121212;
-  color: #fff;
+  color: #f5f5f5;
+}
+
+.dark-theme .card {
+  background-color: #1e1e1e;
+}
+
+.dark-theme .left {
+  background-color: #2a2a2a;
+  border-right: 1px solid #444;
+}
+
+.dark-theme .right {
+  background-color: #1e1e1e;
+}
+
+.dark-theme a {
+  color: #90caf9;
 }
