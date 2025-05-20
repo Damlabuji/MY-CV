@@ -1,0 +1,1 @@
+Önceden yapmış olduğum cv projemi ödeve uygun olarak güncelledim ancah github desktop uygulamasında çalışıyor mu test etmedim zip olarak indirip htdocs klasörüne atmanızı şiddetle öneririm kolay gelsin.
